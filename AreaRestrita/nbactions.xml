@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM--P dev deploy</actionName>
+            <displayName>-P dev deploy</displayName>
+            <goals>
+                <goal>-P</goal>
+                <goal>dev</goal>
+                <goal>deploy</goal>
+            </goals>
+        </action>
+    </actions>
