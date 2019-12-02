@@ -1,5 +1,0 @@
-com\proj\art\view\authenticate\AuthenticFilter.class
-com\proj\art\view\authenticate\JWTUtilToken.class
-com\proj\art\view\config\AppInitializer.class
-com\proj\art\view\config\WebMvcConfig.class
-com\proj\art\view\authenticate\Auth.class
