@@ -26,7 +26,6 @@
     <modules>
         <module>model</module>
         <module>core</module>
-        <module>aplication</module>
         <module>view</module>
         <module>application</module>
     </modules>

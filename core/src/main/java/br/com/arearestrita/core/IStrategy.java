@@ -7,8 +7,8 @@ public interface IStrategy {
 
     /**
      * Método que realiza o process do método strategy.
-     * @param entidade
+     * @param entity
      * @return String
      */
-    public String process(DomainEntity entidade);
+    public String process(DomainEntity entity);
 }

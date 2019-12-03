@@ -2,6 +2,7 @@ package br.com.arearestrita.view.controller;
 
 import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;
@@ -16,7 +17,7 @@ import org.springframework.web.context.request.WebRequest;
  * Description the class CustomErrorController - xxxxx
  *
  * @author Daniela Xavier Concei��o - sistemas@fozadvogados.com.br
- * @version  $Revision: 1
+ * @version $Revision: 1
  * @since Build 0.1 02/12/019
  */
 public class CustomErrorController implements ErrorController {
@@ -25,18 +26,18 @@ public class CustomErrorController implements ErrorController {
 
     @Value("${custom-error-controller.debug}")
     private boolean debug;
+    @Autowired
+    private ErrorAttributes errorAttributes;
 
     /**
      * Bean para retorno de property Config In Dev.
+     *
      * @return PropertySourcesPlaceholderConfigurer
      */
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
         return new PropertySourcesPlaceholderConfigurer();
     }
-
-    @Autowired
-    private ErrorAttributes errorAttributes;
 
     @RequestMapping(value = PATH)
     ResponseEntity<ErrorJson> error(WebRequest webRequest, HttpServletResponse response) {
@@ -49,6 +50,7 @@ public class CustomErrorController implements ErrorController {
 
     /**
      * Retorna Erro path
+     *
      * @return string
      */
     @Override

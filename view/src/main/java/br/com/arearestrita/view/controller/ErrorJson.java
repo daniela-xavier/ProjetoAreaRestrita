@@ -2,7 +2,9 @@ package br.com.arearestrita.view.controller;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Map;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -26,6 +28,7 @@ public class ErrorJson {
 
     /**
      * Construtor de error json.
+     *
      * @param status
      * @param errorAttributes
      */
@@ -42,5 +45,5 @@ public class ErrorJson {
      */
     public ErrorJson() {
     }
-    
+
 }

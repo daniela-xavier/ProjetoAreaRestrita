@@ -14,6 +14,7 @@ import com.google.gson.Gson;
 import com.sun.xml.bind.v2.model.core.ID;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -44,9 +45,9 @@ import org.springframework.web.bind.annotation.RestController;
  * Description the class DomainEntityController - Classe responsével pela
  * execução das açães, de acordo com métodos HTTP.
  *
+ * @param <T> classe da entidade.
  * @author Daniela Xavier Conceição - sistemas@fozadvogados.com.br
  * @version $v rev. $rev $Revision$
- * @param <T> classe da entidade.
  * @since Build 1.1 23/01/2019
  */
 @RestController
@@ -108,7 +109,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
             Result resultado;
 
             if (!id.equals(null)) {
-                resultado = fachada.findById(id,entidadeServico);
+                resultado = fachada.findById(id, entidadeServico);
             } else {
                 resultado = fachada.findAll(clazz, entidadeServico, Pageable.unpaged());
             }
@@ -212,7 +213,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
                 Gson objGson = new Gson();
                 String json = objGson.toJson(resultado);
                 return new ResponseEntity<>(json, httpStatus);
-                
+
             }
         } catch (ExceptionResponse e) {
             httpStatus = HttpStatus.INTERNAL_SERVER_ERROR;
@@ -224,7 +225,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
             resultado.setError();
             resultado.setMessage("Erro ao cadastrar ".concat(clazz.getSimpleName().toLowerCase()));
         }
-        
+
         return new ResponseEntity<>(new ResponseMessage(resultado.hasError(), resultado.getMessage()), httpStatus);
 
     }

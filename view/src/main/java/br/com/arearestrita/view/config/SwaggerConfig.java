@@ -1,6 +1,7 @@
 package br.com.arearestrita.view.config;
 
 import java.util.ArrayList;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -16,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * Description the class SwaggerConfig - xxxxx
  *
  * @author Daniela Xavier Conceicao - sistemas@fozadvogados.com.br
- * @version  $Revision: 1
+ * @version $Revision: 1
  * @since Build 0.1 02/12/019
  */
 @Configuration
@@ -25,6 +26,7 @@ public class SwaggerConfig {
 
     /**
      * Bean de configuracao do swagger 2.
+     *
      * @return Docket
      */
     @Bean
@@ -39,6 +41,7 @@ public class SwaggerConfig {
 
     /**
      * Metodo de metainfo para swagger.
+     *
      * @return ApiInfo
      */
     private ApiInfo metaInfo() {

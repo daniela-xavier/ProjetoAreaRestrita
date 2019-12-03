@@ -18,7 +18,7 @@ public class ExceptionResponse extends RuntimeException {
     /**
      * Construtor da classe com parametro.
      *
-     * @param message - retorna message
+     * @param message    - retorna message
      * @param httpStatus - retorna http status
      */
     public ExceptionResponse(String message, HttpStatus httpStatus) {

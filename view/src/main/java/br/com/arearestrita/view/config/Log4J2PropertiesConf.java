@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
  * Description the class Log4J2PropertiesConf - xxxxx
  *
  * @author Daniela Xavier Conceicao - sistemas@fozadvogados.com.br
- * @version  $Revision: 1
+ * @version $Revision: 1
  * @since Build 0.1 02/12/019
  */
 public class Log4J2PropertiesConf {
