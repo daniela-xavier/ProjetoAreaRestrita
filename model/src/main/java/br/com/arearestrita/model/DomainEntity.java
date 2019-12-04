@@ -6,10 +6,7 @@ import br.com.arearestrita.model.interfaces.OnUpdate;
 import com.google.gson.annotations.Expose;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -59,4 +56,9 @@ public class DomainEntity implements IEntity, Serializable {
     @Column(name = "ATIVO")
     private String active;
 
+    @Transient
+    private String owner;
+
+    @Transient
+    private String token;
 }

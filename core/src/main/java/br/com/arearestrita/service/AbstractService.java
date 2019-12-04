@@ -1,4 +1,4 @@
-package br.com.arearestrita.core.imp;
+package br.com.arearestrita.service;
 
 import br.com.arearestrita.model.anotations.ADomainEntity;
 

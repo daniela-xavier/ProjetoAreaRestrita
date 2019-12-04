@@ -1,4 +1,4 @@
-package br.com.arearestrita.core;
+package br.com.arearestrita.strategy;
 
 
 import br.com.arearestrita.model.DomainEntity;

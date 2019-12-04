@@ -1,16 +1,9 @@
-package br.com.arearestrita.core;
+package br.com.arearestrita.repository;
 
 import br.com.arearestrita.model.DomainEntity;
-import com.google.gson.annotations.Expose;
 import com.sun.xml.bind.v2.model.core.ID;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import javax.persistence.Column;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.Transient;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;

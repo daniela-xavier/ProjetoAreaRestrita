@@ -1,5 +1,8 @@
-package br.com.arearestrita.core;
+package br.com.arearestrita.service;
 
+
+import br.com.arearestrita.repository.IRepository;
+import br.com.arearestrita.strategy.IStrategy;
 
 import java.util.List;
 import java.util.Map;

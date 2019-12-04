@@ -2,10 +2,15 @@ package br.com.arearestrita.view.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
@@ -15,7 +20,8 @@ import java.util.Map;
  * @version $v rev. $rev $Revision$
  * @since Build 1.1 24/01/2019
  */
-@RestController
+@Controller
+@RequestMapping("/")
 public class IndexController {
 
     /**
@@ -23,22 +29,24 @@ public class IndexController {
      *
      * @return String
      */
-    @GetMapping("/foz")
+    @GetMapping("/docs")
     @ApiOperation(value = "Index da aplicacao")
-    public String index() {
-        return "Bem vindo(a) ao WebServiceFoz"
-                + "\t Documentacao do projeto: " + "http://path/swagger-ui.html";
+    public String index(Model model) {
+        model.addAttribute("message", "Bem vindo(a) ao WebServiceFoz"
+                + "\t Documentacao do projeto: " + "http://localhost:9000/swagger-ui.html");
+        return "index"; //view
     }
 
-    @RequestMapping("/")
-    public String home(Map<String, Object> model) {
-        model.put("message", "HowToDoInJava Reader !!");
-        return "index";
+    @GetMapping("/")
+    public String main(Model model) {
+        model.addAttribute("message", "message");
+
+        return "index"; //view
     }
 
-    @RequestMapping("/next")
-    public String next(Map<String, Object> model) {
-        model.put("message", "You are in new page!!");
+    @GetMapping("/next")
+    public String next(Model model) {
+        model.addAttribute("message", "You are in new page!!");
         return "next";
     }
 

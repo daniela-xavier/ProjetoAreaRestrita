@@ -1,9 +1,9 @@
-package br.com.arearestrita.core.imp;
+package br.com.arearestrita.facade.imp;
 
 import br.com.arearestrita.aplicacao.Result;
-import br.com.arearestrita.core.IFacade;
-import br.com.arearestrita.core.IService;
-import br.com.arearestrita.core.IStrategy;
+import br.com.arearestrita.facade.IFacade;
+import br.com.arearestrita.service.IService;
+import br.com.arearestrita.strategy.IStrategy;
 import br.com.arearestrita.model.DomainEntity;
 
 import java.util.*;

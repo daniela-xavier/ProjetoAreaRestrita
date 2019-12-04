@@ -26,7 +26,7 @@ import org.springframework.stereotype.Component;
 @Order(2)
 public class RequestResponseLoggingFilter implements Filter {
     /**
-     * Logging todo o request da aplica��o para auditoria
+     * Logging todo o request da aplicacao para auditoria
      */
     private final static Logger LOGGER = LoggerFactory.getLogger(RequestResponseLoggingFilter.class);
 

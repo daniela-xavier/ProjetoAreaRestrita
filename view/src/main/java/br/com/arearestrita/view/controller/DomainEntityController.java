@@ -1,8 +1,8 @@
 package br.com.arearestrita.view.controller;
 
 import br.com.arearestrita.aplicacao.Result;
-import br.com.arearestrita.core.IFacade;
-import br.com.arearestrita.core.IService;
+import br.com.arearestrita.facade.IFacade;
+import br.com.arearestrita.service.IService;
 import br.com.arearestrita.model.DomainEntity;
 import br.com.arearestrita.model.interfaces.OnDisable;
 import br.com.arearestrita.model.interfaces.OnFindFilter;
@@ -20,7 +20,6 @@ import java.util.Map;
 import java.util.Optional;
 import javax.transaction.Transactional;
 
-import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Pageable;

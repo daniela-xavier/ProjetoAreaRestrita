@@ -1,7 +1,8 @@
-package br.com.arearestrita.core;
+package br.com.arearestrita.facade;
 
 import br.com.arearestrita.aplicacao.Result;
 import br.com.arearestrita.model.DomainEntity;
+import br.com.arearestrita.service.IService;
 import com.sun.xml.bind.v2.model.core.ID;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
