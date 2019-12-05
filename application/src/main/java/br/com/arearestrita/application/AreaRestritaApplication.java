@@ -10,5 +10,4 @@ public class AreaRestritaApplication {
     public static void main(String[] args) {
         SpringApplication.run(AreaRestritaApplication.class, args);
     }
-
 }

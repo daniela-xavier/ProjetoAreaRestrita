@@ -39,15 +39,12 @@ public class IndexController {
 
     @GetMapping("/")
     public String main(Model model) {
-        model.addAttribute("message", "message");
-
-        return "index"; //view
+        return "logincliente";
     }
 
-    @GetMapping("/next")
-    public String next(Model model) {
-        model.addAttribute("message", "You are in new page!!");
-        return "next";
+    @GetMapping("/paginaprincipal")
+    public String home(Model model) {
+        return "paginaprincipal";
     }
 
 

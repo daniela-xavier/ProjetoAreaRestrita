@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+</head>
+    <body>
+        <!--/*  Multiple fragments may be defined in one file */-->
+        <div th:align="center" th:fragment="header-signout">
+            <div class="container-fluid">
+                <div class="jumbotron"
+                     style="background-image: url(https://www.fozadvogados.com.br/wp-content/themes/foz-advogados/assets/images/jumbotron-institucional.jpg);">
+                    <div class="jumbotron-caption"><span class="fa-title-lined">Área do Cliente</span>
+                        <h1>Foz Advogados</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div th:align="center" th:fragment="header-signin">
+            <div class="container-fluid">
+                <div class="fa-header">
+                    <!-- Infobar -->
+                    <div class="fa-header-infobar">
+                        <div class="container">
+                            <div class="fa-infobar-container-left"> <a class="fa-login-trigger" href="https://www.fozadvogados.com.br"><span class="glyphicon glyphicon-globe"></span>&nbsp;Voltar ao site</a> </div>
+                            <div class="fa-infobar-container-right alignright"> <a class="fa-login-trigger" href="/Logout"><span class="glyphicon glyphicon-off"></span>&nbsp;Sair</a> </div>
+                            <div class="fa-infobar-container-right alignright"> <a class="fa-login-trigger" href="meuperfil.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Perfil</a> </div>
+                        </div>
+                    </div>
+                    <!-- End of infobar -->
+                </div>
+                <div class="container">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="/paginaprincipal.html">
+                                    <img src="../../static/images/logo-foz-advogados.png"
+                                th:src="@{/images/logo-foz-advogados.png}" class="img-responsive"/>
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="alignright nav navbar-nav"><!--
+                          <li class="active"><a href="#">Link</a></li>-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Processo <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                                <li><a id='consulta-processo' name='consulta-processo' href='/consulta-processo.html'>Consulta de Processo</a></li>
+                                                <li><a id='consulta-processo-sucessao' name='consulta-processo-sucessao' href='/consulta-processo-sucessao.html'>Processos por sucessão</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Atendimento <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                                <li><a id='informacoes' name='informacoes' href='/informacoes.html'>Informações</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dúvidas <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                                <li><a id='poder-judiciario' name='poder-judiciario' href='/poder-judiciario.html'>Poder Júdiciario</a></li>
+                                                <li><a id='termos-juridicos' name='termos-juridicos' href='/termos-juridicos.html'>Termos Jurídicos</a></li>
+                                                <li><a id='sites-de-interesse' name='sites-de-interesse' href='/sites-de-interesse.html'>Sites de interesse</a></li>
+                                                <li><a id='duvidas-frequentes' name='duvidas-frequentes' href='/duvidas-frequentes.html'>Perguntas Frequentes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </nav>
+                    <!-- /.navbar-collapse -->
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

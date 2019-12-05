@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+    <title>Página Principal</title>
+</head>
+
+<body>
+
+
+
+<header th:insert="~{fragments/header::header-signin}">
+</header>
+<main>
+    <section class="fa-section-default">
+        <div class="container">
+            <hr/>
+
+            <div class="panel">
+
+                <div class="container-fluid panel-info">
+                    <h4 class='text-center'> BEM VINDO(A) À ÁREA DO CLIENTE</h4>
+
+                    <p>Tendo a transparência na prestação de informação como um dos pilares da sua existência,
+                        a Foz Sociedade de Advogado apresenta a nova Área do Cliente. Além de acessar
+                        o andamento dos seus processos, também poderá verificar informações e notificações destinadas a
+                        você. </p>
+                    <p>Agora, a ferramenta possibilita mais dinamismo, rapidez e comodidade no acesso ao andamento dos
+                        seus processos. </p>
+                    <p>Para começar a usufruir desta facilidade, basta fazer um breve cadastro, mesmo que você tenha se
+                        cadastrado na versão anterior.</p>
+                    <p>Se tiver alguma dificuldade durante o processo de cadastramento, para que possamos lhe auxiliar,
+                        contate-nos via Chat ou telefone (11 3113-0100), de segunda a sexta-feira, das 09h às 17h. </p>
+                    <p>Estamos a sua disposição!</p>
+
+                </div>
+
+                <div>
+                    <p> Avalie nossa área do cliente</p>
+                    <button class="btn col-md-3" id="myBtn"><span class=""> Avaliar </span></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer th:insert="~{fragments/footer::footer-signin}">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</body>
+</html>

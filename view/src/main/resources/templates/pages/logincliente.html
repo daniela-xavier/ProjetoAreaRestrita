@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+    <title>Login de cliente</title>
+</head>
+
+<body>
+
+
+<header th:insert="~{fragments/header::header-signout}">
+</header>
+<main>
+    <section class="fa-section-default">
+        <div class="container">
+
+            <div class="row">
+                <h2 align="center">Entrar</h2>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <!-- Mensagem de erro aqui -->
+                </div>
+
+                <div class="fa-form-login">
+
+                    <form action="/AreaRestrita/Login.do" method="POST" class="wpcf7-form fa-form fa-form-contact"
+                          novalidate="novalidate" id="form">
+                        <label>E-mail:</label>
+                        <span class="fa-form-contact">
+                           <input name="form-email" id="form-email" value="" size="40"
+                                                           class="form-control " aria-invalid="false"
+                                                           placeholder="Email cadastrado" type="text"
+                                                           style="text-transform:lowercase">
+                                                </span> <br/>
+                        <label>Senha:</label>
+                        <span class="fa-form-contact">
+                            <input name="form-senha" id="form-senha" value="" size="40"
+                                                           class="form-control " aria-invalid="false"
+                                                           placeholder="Senha" type="password"/>
+                                                </span>
+
+
+                        <button type="submit" id="operacao" name="operacao" class="btn btn-primary" value="CONSULTAR">
+                            <span>Entrar</span></button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <br/>
+                <br/>
+                <div class="fa-form-login">
+                    <a href="/esquecisenha" th:href="@{/esquecisenha}" class="btn btn-primary col-md-12"><span>Esqueci senha</span></a>
+                    <a href="/souclientefoz" th:href="@{/souclientefoz}" class="btn btn-primary col-md-12"><span>Primeiro Acesso</span></a>
+                    <button id="myBtn" class="btn btn-primary col-md-12">Dúvidas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:insert="~{fragments/footer::footer-signout}">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</body>
+</html>
