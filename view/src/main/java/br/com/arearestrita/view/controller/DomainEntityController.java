@@ -50,8 +50,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @since Build 1.1 23/01/2019
  */
 @RestController
-@RequestMapping(value = "/api/v1")
-@Api(value = "API REST FOZ")
+@RequestMapping(value = "/domain")
+@Api(value = "Domain Entity")
 @Controller(value = "domainEntityController")
 @Validated
 public class DomainEntityController<T extends DomainEntity> extends BaseController {

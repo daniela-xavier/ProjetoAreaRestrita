@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
 </head>
-    <body>
-        <!--/*  Multiple fragments may be defined in one file */-->
-        <div th:align="center" th:fragment="footer-signout">
-            &copy; My Awesome App footer</span>
-        </div>
+<body>
+<!--/*  Multiple fragments may be defined in one file */-->
+<div th:align="center" th:fragment="footer-signout">
 
-        <div th:align="center" th:fragment="footer-signin">
-            &copy; My Awesome App footer signin</span>
+    <!-- Container -->
+    <div class="fa-credits-info">
+        <!-- Container -->
+        <div class="container">
+            <p class="fa-footer-info fa-footer-telephones">
+                <span class="glyphicon glyphicon-earphone"></span>
+                Fone: <a href="tel:+551131130100">(11) 3113-0100</a>
+            </p>
+            <p class="fa-footer-info fa-footer-mail">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:fozadvogados@fozadvogados.com.br">fozadvogados@fozadvogados.com.br</a>
+            </p>
+            <p>desenvolvido por <a>Foz Sociedade de Advogados</a> <label class="phiden"> - Daniela Xavier
+                Conceição</label></p>
         </div>
-    </body>
+        <!-- End of container -->
+    </div>
+    <!-- End of Container -->
+
+    <a class="fa-chat">
+     <h3>Atendimento via chat</h3>
+       <p><small>Informamos que no período de 07 a 20 de janeiro,<br>
+               a Foz Sociedade de Advogados irá trabalhar<br>
+               com o quadro de funcionários reduzido<br>
+               em virtude do recesso forense.<br>
+               Caso necessite entrar em contato ligue (11) 3113-0100.<br>
+               Agradecemos a compreensão.</small></p>
+     </a>
+     <!--<script
+            data-blueprint-token="UFNTvOzDJEhJC6z5iqTDHC8ibC7jnIFp7oo6Kw5F"
+            data-project-token="j5qenmtkieyxkh1p7glxdrmki89psibktwghqbtm"
+            defer
+            id="aloweb_widget"
+            src="https://v4.aloweb.com.br/v5/js/widget.js">
+    </script>-->
+</div>
+
+<div th:align="center" th:fragment="footer-signin">
+    <div class="fa-footer">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Column -->
+                <div class="col-xs-6 col-md-3">
+                    <h3>Sobre a Foz Advogados</h3>
+                    <p>A FOZ Sociedade de Advogados completou quarenta e quatro anos de existência.</p>
+                    <p>Durante esse tempo, construímos uma conduta digna de confiança, realizações, conquistas, vitórias
+                        e a consciência de que o nosso maior compromisso é estabelecer o pleno Direito.</p>
+                </div>
+                <!-- End of column -->
+
+
+                <!-- Column -->
+                <div class="col-xs-7 col-md-4">
+                    <h3>Contato</h3>
+                    <address class="fa-footer-info fa-footer-address">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <p><a href="https://goo.gl/maps/QH9ykf77G972" target="_blank">Rua Senador Paulo Egídio, 72<br>
+                            6º andar - Conj. 601<br>
+                            Centro, São Paulo - SP - 01006-904</a></p></span>
+                    </address>
+                    <p class="fa-footer-info fa-footer-telephones">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        Fone: <a href="tel:+551131130100">(11) 3113-0100</a>
+                    </p>
+                    <p class="fa-footer-info fa-footer-mail">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <a href="mailto:fozadvogados@fozadvogados.com.br">fozadvogados@fozadvogados.com.br</a>
+                    </p>
+                </div>
+                <!-- End of column -->
+
+            </div>
+        </div>
+        <!-- End of container -->
+
+        <!-- Credits -->
+        <div class="fa-credits-info">
+            <!-- Container -->
+            <div class="container">
+                <p>desenvolvido por <a>Foz Sociedade de Advogados</a> <label class="phiden"> - Daniela Xavier
+                    Conceição</label></p>
+            </div>
+            <!-- End of container -->
+        </div>
+        <!-- End of credits -->
+    </div>
+    <!-- <a class="fa-chat">
+    <h3>Atendimento via chat</h3>
+      <p><small>Informamos que no período de 07 a 20 de janeiro,<br>
+              a Foz Sociedade de Advogados irá trabalhar<br>
+              com o quadro de funcionários reduzido<br>
+              em virtude do recesso forense.<br>
+              Caso necessite entrar em contato ligue (11) 3113-0100.<br>
+              Agradecemos a compreensão.</small></p>
+    </a> -->
+
+    <script
+            data-blueprint-token="UFNTvOzDJEhJC6z5iqTDHC8ibC7jnIFp7oo6Kw5F"
+            data-project-token="j5qenmtkieyxkh1p7glxdrmki89psibktwghqbtm"
+            defer
+            id="aloweb_widget"
+            src="https://v4.aloweb.com.br/v5/js/widget.js">
+    </script>
+</div>
+</body>
 </html>

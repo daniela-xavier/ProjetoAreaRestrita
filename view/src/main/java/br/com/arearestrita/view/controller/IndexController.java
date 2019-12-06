@@ -30,11 +30,10 @@ public class IndexController {
      * @return String
      */
     @GetMapping("/docs")
-    @ApiOperation(value = "Index da aplicacao")
-    public String index(Model model) {
-        model.addAttribute("message", "Bem vindo(a) ao WebServiceFoz"
-                + "\t Documentacao do projeto: " + "http://localhost:9000/swagger-ui.html");
-        return "index"; //view
+    @ApiOperation(value = "Index da documentação")
+    public ModelAndView docs(HttpServletRequest request) {
+        String urlSwagger =  request.getContextPath() + "/swagger-ui.html";
+        return new ModelAndView("redirect:" + urlSwagger);
     }
 
     @GetMapping("/")

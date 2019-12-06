@@ -47,8 +47,8 @@ public class SwaggerConfig {
     private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
-                "Web Service Foz API REST",
-                "API REST de micro servicos Foz.",
+                "Área Restrita Foz REST",
+                "Área restrista Foz Advogados. Sistema de acesso dos clientes para seus processos e andamentos.",
                 "1.0",
                 "Terms of Service",
                 new Contact("Daniela Xavier Conceicao", "daniela.xavier.con@outlook.com.br", "sistemas@fozadvogados.com.br"),
