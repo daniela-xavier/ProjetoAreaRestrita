@@ -2,28 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4134b59d-6771-4e5f-a08c-84bde532d6c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/view/src/main/resources/templates/souclientefozcontato.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/src/main/resources/templates/souclientefozendereco.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/controller/DomainEntityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/controller/DomainEntityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/acompanhamentodeprocessos.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/processos/acompanhamentodeprocessos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/acompanhamentodeprocessosherdados.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/processos/acompanhamentodeprocessosherdados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/atualizacaocadastral.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/atualizacaocadastral.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/confirmarcodigoacesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/confirmarcodigoacesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/duvidasfrequentes.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/duvidasfrequentes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/enviarcodigoacesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/enviarcodigoacesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/esquecisenha.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/esquecisenha.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/informacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/informacoes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/logincliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/logincliente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/meuperfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/meuperfil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/paginaprincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/paginaprincipal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/poderjudiciario.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/poderjudiciario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/sitesdeinteresse.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/sitesdeinteresse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/souclientefoz.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/souclientefoz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/termoderesponsabilidade.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/termoderesponsabilidade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/termosjuridicos.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/termosjuridicos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/java/br/com/arearestrita/view/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/static/css/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/static/css/Layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/static/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/atualizacaocadastral.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/atualizacaocadastral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/confirmarcodigoacesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/confirmarcodigoacesso.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/enviarcodigoacesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/enviarcodigoacesso.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/esquecisenha.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/esquecisenha.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/logincliente.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/logincliente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/meuperfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/meuperfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/paginaprincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/paginaprincipal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/souclientefoz.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/souclientefoz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/cliente/termoderesponsabilidade.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/termoderesponsabilidade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/duvidasfrequentes.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/duvidasfrequentes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/informacoes.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/informacoes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/poderjudiciario.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/poderjudiciario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/sitesdeinteresse.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/sitesdeinteresse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/gerais/termosjuridicos.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/termosjuridicos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/processos/acompanhamentodeprocessos.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/acompanhamentodeprocessos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/src/main/resources/templates/pages/fragments/processos/acompanhamentodeprocessosherdados.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/src/main/resources/templates/acompanhamentodeprocessosherdados.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +69,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view/src/main/resources/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/view/src/main/resources/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Lombok plugin" />
   </component>
   <component name="RecentsManager">
@@ -80,26 +85,33 @@
       <recent name="br.com.arearestrita" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates" />
       <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\static\images" />
       <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\css" />
       <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\template\view" />
       <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\core\src\main\java\br\com\arearestrita\strategy\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\fragments\cliente" />
-      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\fragments\gerais" />
-      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\fragments\processos" />
+      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates" />
       <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages" />
-      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\fragments" />
+      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\cliente" />
+      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\fragments\cliente" />
+      <recent name="Z:\Tasks\TAR 17 - Projetos\PRJ 02 - Area Cliente\AreaRestrita\Versão 2\Desenvolvimento\Projeto\AreaRestrita (spring boot)\cliente\view\src\main\resources\templates\pages\fragments" />
     </key>
   </component>
   <component name="RunManager" selected="Application.AreaRestritaApplication">
     <configuration name="AreaRestritaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="br.com.arearestrita.application.AreaRestritaApplication" />
       <module name="application" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.arearestrita.view.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="br.com.arearestrita.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,26 +184,26 @@
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="556" y="184" key="#Project_Structure/0.0.1920.1036@0.0.1920.1036" timestamp="1575406906422" />
-    <state x="419" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575405289217">
+    <state x="398" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576088957189">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="419" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575405289217" />
+    <state x="398" y="206" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1576088957189" />
     <state x="740" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575297445802">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="740" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1036@0.0.1920.1036" timestamp="1575297445802" />
-    <state x="589" y="216" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1575297473531">
+    <state x="589" y="216" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1576088341807">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="589" y="216" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575297473531" />
+    <state x="589" y="216" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1576088341807" />
     <state x="769" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1575485535357">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="769" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1036@0.0.1920.1036" timestamp="1575485535357" />
-    <state x="694" y="308" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1575484411445">
+    <state x="694" y="308" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1576088926203">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="694" y="308" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575484411445" />
+    <state x="694" y="308" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1576088926203" />
     <state x="702" y="216" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1575299900008">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
@@ -224,26 +236,30 @@
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="694" y="273" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575317400549" />
-    <state x="744" y="268" key="FileChooserDialogImpl" timestamp="1575302646267">
+    <state x="722" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1576088295077">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="744" y="268" key="FileChooserDialogImpl/0.0.1920.1036@0.0.1920.1036" timestamp="1575302646267" />
-    <state width="1878" height="256" key="GridCell.Tab.0.bottom" timestamp="1575665779079">
+    <state x="722" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1036@0.0.1920.1036" timestamp="1576088295077" />
+    <state x="744" y="268" key="FileChooserDialogImpl" timestamp="1576178484235">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1878" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1036@0.0.1920.1036" timestamp="1575665779079" />
-    <state width="1878" height="256" key="GridCell.Tab.0.center" timestamp="1575665779079">
+    <state x="744" y="268" key="FileChooserDialogImpl/0.0.1920.1036@0.0.1920.1036" timestamp="1576178484235" />
+    <state width="1878" height="175" key="GridCell.Tab.0.bottom" timestamp="1576183608639">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1878" height="256" key="GridCell.Tab.0.center/0.0.1920.1036@0.0.1920.1036" timestamp="1575665779079" />
-    <state width="1878" height="256" key="GridCell.Tab.0.left" timestamp="1575665779079">
+    <state width="1878" height="175" key="GridCell.Tab.0.bottom/0.0.1920.1036@0.0.1920.1036" timestamp="1576183608639" />
+    <state width="1878" height="175" key="GridCell.Tab.0.center" timestamp="1576183608638">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1878" height="256" key="GridCell.Tab.0.left/0.0.1920.1036@0.0.1920.1036" timestamp="1575665779079" />
-    <state width="1878" height="256" key="GridCell.Tab.0.right" timestamp="1575665779079">
+    <state width="1878" height="175" key="GridCell.Tab.0.center/0.0.1920.1036@0.0.1920.1036" timestamp="1576183608638" />
+    <state width="1878" height="175" key="GridCell.Tab.0.left" timestamp="1576183608638">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state width="1878" height="256" key="GridCell.Tab.0.right/0.0.1920.1036@0.0.1920.1036" timestamp="1575665779079" />
+    <state width="1878" height="175" key="GridCell.Tab.0.left/0.0.1920.1036@0.0.1920.1036" timestamp="1576183608638" />
+    <state width="1878" height="175" key="GridCell.Tab.0.right" timestamp="1576183608639">
+      <screen x="0" y="0" width="1920" height="1036" />
+    </state>
+    <state width="1878" height="175" key="GridCell.Tab.0.right/0.0.1920.1036@0.0.1920.1036" timestamp="1576183608639" />
     <state width="1878" height="256" key="GridCell.Tab.1.bottom" timestamp="1575665779080">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
@@ -276,10 +292,10 @@
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
     <state x="96" y="96" width="1728" height="844" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575320895129" />
-    <state x="683" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1575661293099">
+    <state x="683" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1576173126166">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>
-    <state x="683" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1575661293099" />
+    <state x="683" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1036@0.0.1920.1036" timestamp="1576173126166" />
     <state x="789" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575579693997">
       <screen x="0" y="0" width="1920" height="1036" />
     </state>

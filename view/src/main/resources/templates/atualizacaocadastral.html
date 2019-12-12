@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+
+    <title>Atualização de meu cadastro</title>
+</head>
+
+<body>
+<header th:insert="~{fragments/header::header-signout}"></header>
+
+<main>
+    <section class="fa-section-default">
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- div row -->
+            <div class="row" >
+                <div class="container-fluid">
+                    <a name="procedimentoAtualizacao"></a>
+                    <hr></hr>
+                    <br></br>
+                    <h2>Atualizaçao de cadastro</h2>
+                    <p>
+                        Visando mais segurança e integridade dos dados dos seus clientes, a
+                        Foz Advogados mudou os procedimentos quanto a atualização cadastral.
+                        Agora, as atualizações cadastrais só podem ser feitas mediante o envio de documentos comprobatórios.
+                        Por favor, envie-nos cópia:<br/>
+                    <ul>
+                        <li>Cópia do holerite</li>
+                        <li>Cópia do RG, CPF (ou CNH)</li>
+                        <li>Cópia do comprovantes de residência</li>
+                        <li>Ficha Cadastral para impressão&ensp;<a href="ficha-cadastral.pdf" class="btn btn-primary" target="_blank">Abrir</a></a></li>
+                    </ul>
+                    </p>
+                    <p> Imprima a ficha, preencha e nos envie por correio ou e-mail.</p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope"></span>&ensp;&ensp;<a href="mailto:fichacadastral@fozadvogados.com.br">fichacadastral@fozadvogados.com.br</a>
+                        <br/>
+                        <span class="glyphicon glyphicon-map-marker"></span>&ensp;&ensp;<a target="_blank" href="https://goo.gl/maps/QH9ykf77G972">Rua Senador Paulo Egídio, 72, 6º andar - Conj. 601,Centro, São Paulo - SP - 01006-904</a>
+
+                    </p>
+
+                </div>
+
+                <div class="container-fluid">
+                    <hr></hr>
+                    <br></br>
+
+                    <label class="control-label" >Não recebeu? ou Precisa receber o código de confirmação </label>
+                    <a type="submit" id="operacao" name="operacao" class="btn-link" href="#"><span>Clique aqui</span></a>
+
+                    <br></br>
+                </div>
+
+            </div>
+            <!-- End of container -->
+        </div>
+    </section>
+</main>
+<footer th:insert="~{fragments/footer::footer-signout}">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</body>
+</html>

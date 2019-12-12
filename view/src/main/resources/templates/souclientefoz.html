@@ -1,0 +1,235 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link href="../static/css/Layout.css" rel="stylesheet" th:href="@{/css/Layout.css}"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+    <title>Confirmação de Dados cadastrais</title>
+</head>
+
+<body>
+
+
+<header th:insert="~{fragments/header::header-signin}">
+</header>
+<main>
+    <section class="fa-section-default">
+        <div class="container">
+            <div class="container">
+
+
+                <div class="row">
+                    <h2 align="center">Confirmação de Dados cadastrais</h2>
+                    <!-- Ficha Cadastral -->
+                    <div class="wpcf7" dir="ltr" id="wpcf7-f4-p123-o1" lang="pt-BR">
+                        <div class="container-fluid">
+                            <div class='alert alert-info' role='alert'>
+                                <p>Para saber como realizar a atualização de seus dados <a href="atualizacaocadastral.html">clique aqui.</a></p>
+                                </br>
+                                <p>Ainda não recebeu o e-mail com o código de validação? <a href="confirmar-email.html">clique
+                                    aqui.</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Formulario -->
+                    <form action="##" class="wpcf7-form form form-contact" id="form" method="post"
+                          name="form" novalidate="novalidate">
+
+                        <!-- Dados pesssoais -->
+                        <div class="container">
+                            <label> Dados Pessoais </label>
+                            <hr/>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label class="col-md-12 control-label" >Nome completo</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control-form" id="nome" minlength="5" name="nome" placeholder="Nome Completo"
+                                               required="" size="50"
+                                               style="text-transform:uppercase" type="text" value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="form-group col-md-3">
+                                    <label class="col-sm-6 control-label">CPF</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control-form" for="cpfPessoaFisica" id="form-cpf" minlength="11"
+                                               name="form-cpf"
+                                               placeholder="___.___.___-__" required="" size="11" type="text"
+                                               type="text" value=""/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label class="col-sm-6 control-label">RG</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control-form" id="form-rg" minlength="9" name="form-rg"
+                                               placeholder="__.___.___-_" required=""
+                                               size="8" type="text"
+                                               value=""/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-sm-6 control-label">Data de Nascimento</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control-form" id="form-dt-nasc" minlength="8" name="form-dt-nasc"
+                                               placeholder="__/__/____" required="" size="8" type="datetime"
+                                               type="text"
+                                               value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-6 control-label">Nome completo da Mãe</label>
+                                    <div class="col-md-12">
+                                        <input class="form-control-form " id="form-nome-completo-filiacao" minlength="3"
+                                               name="form-nome-completo-filiacao" placeholder="Nome completo da Mãe" required=""
+                                               size="40" style="text-transform:uppercase"
+                                               type="text"
+                                               value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim Dados pesssoais -->
+
+                        <div class="container">
+                            <button class="btn btn-danger alignright" id="operacao" name="operacao" type="submit"
+                                    value="SALVAR"><span>PRÓXIMO</span></button>
+                        </div>
+                        <br/>
+                    </form>
+                    <!-- Fim Formulario -->
+                </div>
+
+                <div><p>A Foz Advogados em nenhum momento guarda os dados de seus clientes em sites ou divulga as informações utilizadas nesta área do cliente.
+                    Os dados são utilizados apenas e exclusivamente para verificar e garantir que somente a pessoa detentora e responsável
+                    pela informação acesse-a, mantendo o sigilo das informações. </p></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:insert="~{fragments/footer::footer-signin}">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+<script src="https://rawgit.com/mplatt/fold-to-ascii/eae6030cc155a59fe7859666b4fb45171c67a17f/fold-to-ascii.js"></script>
+<script type="text/javascript">
+            $(document).ready(function () {
+                window.scrollTo(0, 10);
+
+                $("#form-cpf").mask("000.000.000-00", {placeholder: "___.___.___-__"}, {reverse: true});
+                $("#form-dt-nasc").mask("00/00/0000", {placeholder: "__/__/____"}, {reverse: false});
+                $("#form-cep").mask("00000-000", {placeholder: "_____-___"}, {reverse: true});
+                $("#form-tel-celular").mask("+00(00) 00000-0000", {placeholder: "+__(__) _____-____"}, {reverse: false});
+                $("#form-tel-comercial").mask("+00(00) 0000-0000", {placeholder: "+__(__) ____-____"}, {reverse: false});
+                $("#form-tel-residencial").mask("+00(00) 0000-0000", {placeholder: "+__(__) ____-____"}, {reverse: false});
+                $("#form-rg").mask('00.000.000-X', {translation: {'X': {pattern: /[x-xX-X0-9]/, '#': ''}}});
+                $("#form-end-num").mask("000000", {reverse: false});
+                $(":input").keyup(function () {
+                    this.addEventListener("input", function (event) {
+                        event.target.value = foldToASCII(event.target.value).toUpperCase();
+                    });
+                });
+                $("#form").validate({
+                    errorElement: "em",
+                    errorPlacement: function (error, element) {
+                        // Add the `help-block` class to the error element
+                        error.addClass("help-block");
+                        // Add `has-feedback` class to the parent div.form-group
+                        // in order to add icons to inputs
+                        element.parents(".col-md-12").addClass("has-feedback");
+                        if (element.prop("type") === "checkbox") {
+                            error.insertAfter(element.parent("label"));
+                        } else {
+                            error.insertAfter(element);
+                        }
+
+                        // Add the span element, if doesn't exists, and apply the icon classes to it.
+                        if (!element.next("span")[ 0 ]) {
+                            $("<span class='glyphicon glyphicon-remove form-control-feedback'></span>").insertAfter(element);
+                        }
+                    },
+                    success: function (label, element) {
+                        // Add the span element, if doesn't exists, and apply the icon classes to it.
+                        if (!$(element).next("span")[ 0 ]) {
+                            $("<span class='glyphicon glyphicon-ok form-control-feedback'></span>").insertAfter($(element));
+                        }
+                    },
+                    highlight: function (element, errorClass, validClass) {
+                        $(element).parents(".col-md-12").addClass("has-error").removeClass("has-success");
+                        $(element).next("span").addClass("glyphicon-remove").removeClass("glyphicon-ok");
+                    },
+                    unhighlight: function (element, errorClass, validClass) {
+                        $(element).parents(".col-md-12").addClass("has-success").removeClass("has-error");
+                        $(element).next("span").addClass("glyphicon-ok").removeClass("glyphicon-remove");
+                    }
+                });
+                $("#form-cpf").blur(function () {
+                    var elementoCpf = document.getElementById('form-cpf');
+                    var cpf = elementoCpf.value;
+                    if (!verificarCPF(cpf)) {
+                        $(elementoCpf).parents(".col-md-12").addClass("has-feedback");
+                        $(elementoCpf).parents(".col-md-12").addClass("has-error").removeClass("has-success");
+                        $(elementoCpf).next("span").addClass("glyphicon-remove").removeClass("glyphicon-ok");
+                        $('#MsgDanger').show(0).delay(8000).hide(800);
+                        $(elementoCpf).setText("");
+                    }
+                    ;
+                });
+                // validador CPF
+                function verificarCPF(c) {
+                    if ((c = c.replace(/[^\d]/g, "")).length != 11) {
+                        return false;
+                    }
+
+                    if (c == "00000000000") {
+                        return false;
+                    }
+
+                    var r;
+                    var s = 0;
+                    for (i = 1; i <= 9; i++) {
+                        s = s + parseInt(c[i - 1]) * (11 - i);
+                    }
+
+                    r = (s * 10) % 11;
+                    if ((r == 10) || (r == 11)) {
+                        r = 0;
+                    }
+
+                    if (r != parseInt(c[9])) {
+                        return false;
+                    }
+
+                    s = 0;
+                    for (i = 1; i <= 10; i++) {
+                        s = s + parseInt(c[i - 1]) * (12 - i);
+                    }
+
+                    r = (s * 10) % 11;
+                    if ((r == 10) || (r == 11)) {
+                        r = 0;
+                    }
+
+                    if (r != parseInt(c[10])) {
+                        return false;
+                    }
+
+                    return true;
+                }
+                ;
+
+            });
+                                                                    </script>
+</body>
+</html>

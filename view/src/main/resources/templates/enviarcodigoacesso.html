@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+
+    <title>Código de acesso</title>
+</head>
+
+<body>
+
+
+<header th:insert="~{fragments/header::header-signout}">
+</header>
+<main>
+    <section class="fa-section-default">
+        <div class="container" id="main">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Column -->
+                <div class="row">
+                    <h2 align="center">Envio de código de válidação</h2>
+                    <p>Enviaremos um código de válidação, para garantir seu acesso em nossa área do cliente.</p>
+                </div>
+                <hr/>
+
+                <div class="container">
+
+                    <form action="##" class="container col-md-6" id="form" method="POST" name="form"
+                          novalidate="novalidate">
+                        <label>Email:</label>
+                        <span class="row">
+                          <input name="req-email"  type="email" size="40" class="form-control " required=""
+                                                   id="req-email" aria-invalid="true" placeholder="seuemail@email.com" type="email" style="text-transform:lowercase"></input>
+                        </span>
+                        <div class="">
+                            <button class="btn btn-default alignleft" id="operacao" name="operacao" type="submit"
+                                    value="SALVAR"><span>Enviar</span></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:insert="~{fragments/footer::footer-signout}">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</body>
+</html>

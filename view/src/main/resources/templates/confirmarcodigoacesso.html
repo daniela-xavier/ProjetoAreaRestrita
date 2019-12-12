@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link href="../static/css/Layout.css" rel="stylesheet" th:href="@{/css/Layout.css}"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+
+    <title>Confirmar código de acesso</title>
+</head>
+
+<body>
+<header th:insert="~{fragments/header::header-signout}"></header>
+
+<main>
+    <section class="fa-section-default">
+        <div class="container" id="main">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Column -->
+                <div class="row">
+                    <h2 align="center">Confirmar código de acesso</h2>
+                    <p>Enviamos um código de válidação, para garantir seu acesso em nossa área do cliente.</p>
+                    <p>Após a validação verifique seu e-mail para demais instruções de acesso.</p>
+                </div>
+                <hr/>
+
+                <div class="container">
+
+                    <form action="##" class="container col-md-6" id="form" method="POST" name="form"
+                          novalidate="novalidate">
+                        <label>Digite aqui o código de válidação:</label>
+                        <span class="row">
+                              <input aria-invalid="true" class="form-control " id="codigo-validacao" name="codigo-validacao" placeholder="CODIGO"
+                                     required="" size="40" style="text-transform:lowercase" type="text"
+                                     type="text"></input>
+                            </span>
+                        <br/>
+                        <div class="">
+                            <button class="btn btn-default alignleft" id="operacao" name="operacao" type="submit"
+                                    value="SALVAR"><span>Validar</span></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <hr></hr>
+                    <br></br>
+
+                    <label class="control-label" >Não recebeu? ou Precisa receber o código de confirmação novamente? </label>
+                    <a type="submit" id="operacao" name="operacao" class="btn-link" href="#"><span>Clique aqui</span></a>
+
+                    <br></br>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer th:insert="~{fragments/footer::footer-signout}"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+</body>
+</html>

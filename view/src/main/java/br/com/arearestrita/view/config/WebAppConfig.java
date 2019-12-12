@@ -6,17 +6,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 @Configuration
-@ComponentScan("br.com.arearestrita")
+@ComponentScan("br.com.arearestrita.*")
 public class WebAppConfig implements WebMvcConfigurer {
     @Bean
     @Description("Thymeleaf template resolver serving HTML 5")
@@ -24,7 +21,7 @@ public class WebAppConfig implements WebMvcConfigurer {
 
         var templateResolver = new ClassLoaderTemplateResolver();
 
-        templateResolver.setPrefix("templates/pages/");
+        templateResolver.setPrefix("templates/");
         templateResolver.setCacheable(false);
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode("HTML5");
@@ -55,8 +52,9 @@ public class WebAppConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("index");
+        registry.addViewController("/").setViewName("logincliente");
     }
 }
