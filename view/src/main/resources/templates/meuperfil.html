@@ -6,13 +6,12 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <link href="../static/css/Layout.css" th:href="@{/css/Layout.css}" rel="stylesheet"/>
+    <link href="../static/css/Layout.css" rel="stylesheet" th:href="@{/css/Layout.css}"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
-    <title>######</title>
+    <title>Meu perfil</title>
 </head>
 
 <body>
-
 
 
 <header th:insert="~{fragments/header::header-signin}">
@@ -20,7 +19,47 @@
 <main>
     <section class="fa-section-default">
         <div class="container">
-            <p>teste</p>
+            <div class="panel">
+
+                <div class="container-fluid panel-info">
+
+                        <div class="row form-group">
+                            <div class="form-group col-lg-5">
+                                <h3>Dados de cadastro </h3>
+                                <label><b>Nome:</b></label><br/>
+                                <label><b>Endereço eletrônico:</b> </label><br/>
+                                <label><b>Cadastro: </b> dd/MM/yyyy </label>
+                                <hr/>
+                            </div>
+                        </div>
+
+                        <form action="/AreaRestrita/AltSenha.do" class=" row form-group" id="form" method="post"
+                              name="form" novalidate="novalidate">
+                            <div class="form-group col-lg-5">
+                                <div class="">
+                                    <h3> Alterar senha</h3>
+                                    <label>Nova Senha:</label>
+                                    <span class="fa-form-contact">
+                                            <input aria-invalid="false" class="form-control " id="form-senha" name="form-senha"
+                                                   placeholder="Senha" size="40" type="password"
+                                                   value="">
+                                            <div id="progress">
+                                                <div></div>
+                                            </div><br/>
+                                        </span> <br/>
+                                    <label>Confirmar Nova Senha:</label>
+                                    <span class="fa-form-contact">
+                                            <input aria-invalid="false" class="form-control " id="form-senha-confirme" name="form-senha-confirme"
+                                                   placeholder="Senha" size="40" type="password"
+                                                   value="">
+                                        </span>
+                                </div>
+                                <button class="btn btn-primary" id="operacao" name="operacao" type="submit"
+                                        value="ALTERAR"><span>Enviar</span></button>
+                            </div>
+                        </form>
+                </div>
+            </div>
 
         </div>
     </section>

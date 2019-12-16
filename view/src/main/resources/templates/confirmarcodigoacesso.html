@@ -25,8 +25,8 @@
                 <!-- Column -->
                 <div class="row">
                     <h2 align="center">Confirmar código de acesso</h2>
-                    <p>Enviamos um código de válidação, para garantir seu acesso em nossa área do cliente.</p>
-                    <p>Após a validação verifique seu e-mail para demais instruções de acesso.</p>
+                    <p>Enviamos para o seu email um código de válidação, para garantir seu acesso em nossa área do
+                        cliente digite o código informado abaixo:</p>
                 </div>
                 <hr/>
 
@@ -36,9 +36,9 @@
                           novalidate="novalidate">
                         <label>Digite aqui o código de válidação:</label>
                         <span class="row">
-                              <input aria-invalid="true" class="form-control " id="codigo-validacao" name="codigo-validacao" placeholder="CODIGO"
-                                     required="" size="40" style="text-transform:lowercase" type="text"
-                                     type="text"></input>
+                              <input aria-invalid="true" class="form-control " id="codigo-validacao"
+                                     name="codigo-validacao" placeholder="CODIGO"
+                                     required="" size="40" style="text-transform:lowercase"></input>
                             </span>
                         <br/>
                         <div class="">
@@ -47,23 +47,88 @@
                         </div>
                     </form>
                 </div>
-                <div class="container-fluid">
+                <div class="row">
                     <hr></hr>
                     <br></br>
 
-                    <label class="control-label" >Não recebeu? ou Precisa receber o código de confirmação novamente? </label>
-                    <a type="submit" id="operacao" name="operacao" class="btn-link" href="#"><span>Clique aqui</span></a>
 
                     <br></br>
-                </div>
 
+                    <!-- Container -->
+                    <div class="container">
+
+
+                        <ul class="cd-faq-group">
+
+                            <li>
+                                <a class="cd-faq-trigger" href="#0">Não recebeu o código de confirmação? Clique aqui</a>
+                                <div class="cd-faq-content ">
+                                    <div class="fa-form row">
+                                        <form action="##" id="form" method="POST"
+                                              name="form"
+                                              novalidate="novalidate">
+                                            <label>Email:</label>
+                                            <span>
+                                                      <input aria-invalid="true" class="form-control col-md-5"
+                                                             id="req-email"
+                                                             name="req-email"
+                                                             placeholder="seuemail@email.com"
+                                                             required="" size="40" type="email"></input>
+                                                    </span>
+
+                                            <button class="btn btn-default alignleft " id="operacao"
+                                                    name="operacao"
+                                                    onclick="startCountdown()"
+                                                    type="button"
+                                                    value="SALVAR"><span align=center
+                                                                         id=numberCountdown>Reenviar</span>
+                                            </button>
+
+                                    </form>
+                                </div>
+                    </div>
+                    </li>
+                    </ul>
+
+
+                </div>
             </div>
+
+        </div>
         </div>
     </section>
 </main>
 
-<footer th:insert="~{fragments/footer::footer-signout}"></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+
+<script language=JavaScript>
+
+var g_iCount = new Number();
+var g_iCount = 60;
+
+function startCountdown(){
+
+
+       if((g_iCount - 1) >= 0){
+            operacao.disabled=true;
+
+               g_iCount = g_iCount - 1;
+               numberCountdown.innerText = 'Aguarde (' + g_iCount +')s';
+               setTimeout('startCountdown()',1000);
+       }else{
+            numberCountdown.innerText = 'Reenviar';
+            operacao.disabled=false;
+       }
+}
+
+
+
+
+
+
+</script>
 </body>
 </html>

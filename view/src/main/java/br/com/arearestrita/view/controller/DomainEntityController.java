@@ -156,7 +156,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         }
 
         try {
-            IService entidadeServico = getServico(clazz.getSimpleName());
+            IService entidadeServico = getServico(entity.getClass().getSimpleName());
             Result resultado = fachada.FindByFilter(entity, entidadeServico);
 
             if (resultado.hasError()) {
@@ -172,7 +172,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         } catch (Exception e) {
             System.out.println("Error.: " + e.getMessage());
             return new ResponseEntity<>(
-                    new ResponseMessage(Boolean.TRUE, "Erro ao cadastrar ".concat(clazz.getSimpleName().toLowerCase())),
+                    new ResponseMessage(Boolean.TRUE, "Erro ao cadastrar ".concat(entity.getClass().getSimpleName().toLowerCase())),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -201,7 +201,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         HttpStatus httpStatus;
 
         try {
-            IService entidadeServico = getServico(clazz.getSimpleName());
+            IService entidadeServico = getServico(entity.getClass().getSimpleName());
             resultado = fachada.save(entity, entidadeServico);
 
             if (resultado.hasError()) {
@@ -222,7 +222,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         } catch (Exception e) {
             httpStatus = HttpStatus.INTERNAL_SERVER_ERROR;
             resultado.setError();
-            resultado.setMessage("Erro ao cadastrar ".concat(clazz.getSimpleName().toLowerCase()));
+            resultado.setMessage("Erro ao cadastrar ".concat(entity.getClass().getSimpleName().toLowerCase()));
         }
 
         return new ResponseEntity<>(new ResponseMessage(resultado.hasError(), resultado.getMessage()), httpStatus);
@@ -250,7 +250,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         }
 
         try {
-            IService entidadeServico = getServico(clazz.getSimpleName());
+            IService entidadeServico = getServico(entity.getClass().getSimpleName());
             Result resultado = fachada.update(entity, entidadeServico);
 
             if (resultado.hasError()) {
@@ -266,7 +266,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         } catch (Exception e) {
             System.out.println("Error.: " + e.getMessage());
             return new ResponseEntity<>(
-                    new ResponseMessage(Boolean.TRUE, "Erro ao atualizar ".concat(clazz.getSimpleName().toLowerCase())),
+                    new ResponseMessage(Boolean.TRUE, "Erro ao atualizar ".concat(entity.getClass().getSimpleName().toLowerCase())),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -286,7 +286,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
     ResponseEntity deleteEntity(@PathVariable("id") ID id) {
 
         try {
-            IService entidadeServico = getServico(clazz.getSimpleName());
+            IService entidadeServico = getServico(clazz.getClass().getSimpleName());
             Result resultado;
 
             if (!id.equals(null)) {
@@ -336,7 +336,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         }
 
         try {
-            IService entidadeServico = getServico(clazz.getSimpleName());
+            IService entidadeServico = getServico(entity.getClass().getSimpleName());
             Result resultado = fachada.disable(entity, entidadeServico);
 
             if (resultado.hasError()) {
@@ -352,7 +352,7 @@ public class DomainEntityController<T extends DomainEntity> extends BaseControll
         } catch (Exception e) {
             System.out.println("Error.: " + e.getMessage());
             return new ResponseEntity<>(
-                    new ResponseMessage(Boolean.TRUE, "Erro ao atualizar ".concat(clazz.getSimpleName().toLowerCase())),
+                    new ResponseMessage(Boolean.TRUE, "Erro ao atualizar ".concat(entity.getClass().getSimpleName().toLowerCase())),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

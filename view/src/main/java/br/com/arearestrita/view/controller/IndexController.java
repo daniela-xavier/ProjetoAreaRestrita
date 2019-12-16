@@ -32,7 +32,7 @@ public class IndexController {
     @GetMapping("/docs")
     @ApiOperation(value = "Index da documentação")
     public ModelAndView docs(HttpServletRequest request) {
-        String urlSwagger =  request.getContextPath() + "/swagger-ui.html";
+        String urlSwagger = request.getContextPath() + "/swagger-ui.html";
         return new ModelAndView("redirect:" + urlSwagger);
     }
 
@@ -45,6 +45,26 @@ public class IndexController {
     public String home(Model model) {
         return "paginaprincipal";
     }
+
+    @GetMapping("/esquecisenha")
+    public String esquecisenha(Model model) { return "esquecisenha";}
+
+    @GetMapping("/souclientefoz")
+    public String soucliente(Model model) {
+        return "souclientefoz";
+    }
+
+    @GetMapping("/souclientefozcontato")
+    public String souclientefozcontato(Model model) { return "souclientefozcontato";}
+
+    @GetMapping("/souclientefozendereco")
+    public String souclientefozendereco(Model model) { return "souclientefozendereco";}
+
+    @GetMapping("/confirmarcodigoacesso")
+    public String confirmarcodigoacesso(Model model) { return "confirmarcodigoacesso";}
+
+    @GetMapping("/atualizacaocadastral")
+    public String atualizacaocadastral(Model model) { return "atualizacaocadastral";}
 
 
 }

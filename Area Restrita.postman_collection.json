@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "f34efcfd-5c5c-4f94-b118-afc97f2c6146",
+		"name": "Area Restrita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/Domain",
+			"item": [
+				{
+					"name": "GET /domain",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"active\": \"s\", \"changedBy\": \"foz\", \"changedIn\": \"2019-12-16T20:49:26.657Z\", \"includedBy\": \"foz\", \"includedIn\": \"2019-12-16T20:49:26.657Z\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/domain",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"domain"
+							]
+						},
+						"description": "GET \njson"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /domain/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/domain/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"domain",
+								"1"
+							]
+						},
+						"description": "GET \ndomain\n1"
+					},
+					"response": []
+				}
+			],
+			"description": "Requests /domain",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

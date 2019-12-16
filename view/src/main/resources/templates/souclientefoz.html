@@ -7,14 +7,13 @@
     <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <link href="../static/css/Layout.css" rel="stylesheet" th:href="@{/css/Layout.css}"/>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
     <title>Confirmação de Dados cadastrais</title>
 </head>
 
 <body>
 
 
-<header th:insert="~{fragments/header::header-signin}">
+<header th:insert="~{fragments/header::header-signout}">
 </header>
 <main>
     <section class="fa-section-default">
@@ -25,103 +24,124 @@
                 <div class="row">
                     <h2 align="center">Confirmação de Dados cadastrais</h2>
                     <!-- Ficha Cadastral -->
-                    <div class="wpcf7" dir="ltr" id="wpcf7-f4-p123-o1" lang="pt-BR">
+                    <div class="container">
                         <div class="container-fluid">
-                            <div class='alert alert-info' role='alert'>
-                                <p>Para saber como realizar a atualização de seus dados <a href="atualizacaocadastral.html">clique aqui.</a></p>
-                                </br>
-                                <p>Ainda não recebeu o e-mail com o código de validação? <a href="confirmar-email.html">clique
-                                    aqui.</a></p>
-                            </div>
-                        </div>
+                            <form action="##" class="wpcf7-form form form-contact" id="form" method="post"
+                                  name="form" novalidate="novalidate">
 
+                                <!-- Dados pesssoais -->
+                                <div class="row">
+                                    <label> Dados Pessoais </label>
+                                    <hr/>
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label class="col-md-12 control-label">Nome completo</label>
+                                            <div class="col-md-12">
+                                                <input class="form-control-form" id="nome" minlength="5" name="nome"
+                                                       placeholder="Nome Completo"
+                                                       required="" size="50"
+                                                       style="text-transform:uppercase" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="form-group col-md-3">
+                                            <label class="col-sm-6 control-label">CPF</label>
+                                            <div class="col-md-12">
+                                                <input class="form-control-form" for="cpfPessoaFisica" id="form-cpf"
+                                                       minlength="11"
+                                                       name="form-cpf"
+                                                       placeholder="___.___.___-__" required="" size="11" type="text"
+                                                       value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label class="col-sm-6 control-label">RG</label>
+                                            <div class="col-md-12">
+                                                <input class="form-control-form" id="form-rg" minlength="9"
+                                                       name="form-rg"
+                                                       placeholder="__.___.___-_" required=""
+                                                       size="8" type="text"
+                                                       value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label class="col-sm-12 control-label">Data de Nascimento</label>
+                                            <div class="col-md-12">
+                                                <input class="form-control-form" id="form-dt-nasc" minlength="8"
+                                                       name="form-dt-nasc"
+                                                       placeholder="__/__/____" required="" size="8" type="datetime"
+                                                       value=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label class="col-sm-6 control-label">Nome completo da Mãe</label>
+                                            <div class="col-md-12">
+                                                <input class="form-control-form " id="form-nome-completo-filiacao"
+                                                       minlength="3"
+                                                       name="form-nome-completo-filiacao"
+                                                       placeholder="Nome completo da Mãe" required=""
+                                                       size="40" style="text-transform:uppercase"
+                                                       type="text"
+                                                       value=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fim Dados pesssoais -->
+
+                                <div class="container">
+                                    <button class="btn btn-danger alignright" id="operacao" name="operacao"
+                                            type="submit"
+                                            value="SALVAR"><span>PRÓXIMO</span></button>
+                                </div>
+                                <a href="/souclientefozendereco" th:href="@{/souclientefozendereco}">PRÓXIMO</a>
+                                <br/>
+                            </form>
+                        </div>
                     </div>
-                    <!-- Formulario -->
-                    <form action="##" class="wpcf7-form form form-contact" id="form" method="post"
-                          name="form" novalidate="novalidate">
-
-                        <!-- Dados pesssoais -->
-                        <div class="container">
-                            <label> Dados Pessoais </label>
-                            <hr/>
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <label class="col-md-12 control-label" >Nome completo</label>
-                                    <div class="col-md-12">
-                                        <input class="form-control-form" id="nome" minlength="5" name="nome" placeholder="Nome Completo"
-                                               required="" size="50"
-                                               style="text-transform:uppercase" type="text" value=""/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-
-                                <div class="form-group col-md-3">
-                                    <label class="col-sm-6 control-label">CPF</label>
-                                    <div class="col-md-12">
-                                        <input class="form-control-form" for="cpfPessoaFisica" id="form-cpf" minlength="11"
-                                               name="form-cpf"
-                                               placeholder="___.___.___-__" required="" size="11" type="text"
-                                               type="text" value=""/>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label class="col-sm-6 control-label">RG</label>
-                                    <div class="col-md-12">
-                                        <input class="form-control-form" id="form-rg" minlength="9" name="form-rg"
-                                               placeholder="__.___.___-_" required=""
-                                               size="8" type="text"
-                                               value=""/>
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label class="col-sm-6 control-label">Data de Nascimento</label>
-                                    <div class="col-md-12">
-                                        <input class="form-control-form" id="form-dt-nasc" minlength="8" name="form-dt-nasc"
-                                               placeholder="__/__/____" required="" size="8" type="datetime"
-                                               type="text"
-                                               value=""/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label class="col-sm-6 control-label">Nome completo da Mãe</label>
-                                    <div class="col-md-12">
-                                        <input class="form-control-form " id="form-nome-completo-filiacao" minlength="3"
-                                               name="form-nome-completo-filiacao" placeholder="Nome completo da Mãe" required=""
-                                               size="40" style="text-transform:uppercase"
-                                               type="text"
-                                               value=""/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Fim Dados pesssoais -->
-
-                        <div class="container">
-                            <button class="btn btn-danger alignright" id="operacao" name="operacao" type="submit"
-                                    value="SALVAR"><span>PRÓXIMO</span></button>
-                        </div>
-                        <br/>
-                    </form>
-                    <!-- Fim Formulario -->
                 </div>
 
-                <div><p>A Foz Advogados em nenhum momento guarda os dados de seus clientes em sites ou divulga as informações utilizadas nesta área do cliente.
-                    Os dados são utilizados apenas e exclusivamente para verificar e garantir que somente a pessoa detentora e responsável
-                    pela informação acesse-a, mantendo o sigilo das informações. </p></div>
+                <div class="container">
+                    <div class="row">
+                        <div class='alert alert-info' role='alert'>
+                            <p>Para saber como realizar a atualização de seus dados
+                                <a href="/atualizacaocadastral" th:href="@{/atualizacaocadastral}">clique aqui.</a></p>
+                            </br>
+                            <p>Ainda não recebeu o e-mail com o código de validação?
+                                <a href="/confirmarcodigoacesso" th:href="@{/confirmarcodigoacesso}">clique aqui.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+                <div class="container">
+                    <div class="row">
+                        <p>A Foz Advogados em nenhum momento guarda os dados de seus clientes em sites ou divulga as
+                            informações utilizadas nesta área do cliente.
+                            Os dados são utilizados apenas e exclusivamente para verificar e garantir que somente a
+                            pessoa
+                            detentora e responsável
+                            pela informação acesse-a, mantendo o sigilo das informações. </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
 </main>
-<footer th:insert="~{fragments/footer::footer-signin}">
+<footer th:insert="~{fragments/footer::footer-signout}">
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"
+        type="text/javascript"></script>
 <script src="https://rawgit.com/mplatt/fold-to-ascii/eae6030cc155a59fe7859666b4fb45171c67a17f/fold-to-ascii.js"></script>
 <script type="text/javascript">
             $(document).ready(function () {
@@ -230,6 +250,9 @@
                 ;
 
             });
-                                                                    </script>
+
+
+
+</script>
 </body>
 </html>

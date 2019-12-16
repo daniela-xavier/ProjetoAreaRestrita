@@ -7,14 +7,13 @@
     <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <link href="../static/css/Layout.css" rel="stylesheet" th:href="@{/css/Layout.css}"/>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
     <title>Confirmação de Dados cadastrais</title>
 </head>
 
 <body>
 
 
-<header th:insert="~{fragments/header::header-signin}">
+<header th:insert="~{fragments/header::header-signout}">
 </header>
 <main>
     <section class="fa-section-default">
@@ -32,6 +31,7 @@
                         <!-- Dados para correspondencia -->
                         <div class="container">
                             <label> Dados para comunicacao</label>
+                            <hr>
                             <!-- Dados de email -->
                             <div class="container">
                                 <div class="row">
@@ -43,12 +43,14 @@
                                         <p>Preencha com e-mail ativo e de seu acesso, pois é por meio deste que finalizaremos o cadastro.</p>
                                         <p class="mb-0">E enviaremos posteriores comunicados sobre os andamentos de seus processos</p>
                                     </div>
+                                    <br/>
+                                    <br/>
                                     <div class="form-group col-md-12">
                                         <label class="col-sm-6 control-label">Endereço eletrônico</label>
                                         <div class="col-md-12">
                                             <input name="form-email"  type="email" size="40" class="form-control-form" required=""
                                                    id="form-email" aria-invalid="true" placeholder="seuemail@email.com"
-                                                   type="email" style="text-transform:lowercase" value=""/>
+                                                   style="text-transform:lowercase" value=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -63,19 +65,40 @@
                             <button class="btn btn-danger alignright" id="operacao" name="operacao" type="submit"
                                     value="SALVAR"><span>Enviar</span></button>
                         </div>
+                        <a href="/confirmarcodigoacesso" th:href="@{/confirmarcodigoacesso}">PRÓXIMO</a>
                         <br/>
                     </form>
                     <!-- Fim Formulario -->
                 </div>
 
-                <div><p>A Foz Advogados em nenhum momento guarda os dados de seus clientes em sites ou divulga as informações utilizadas nesta área do cliente.
-                    Os dados são utilizados apenas e exclusivamente para verificar e garantir que somente a pessoa detentora e responsável
-                    pela informação acesse-a, mantendo o sigilo das informações. </p></div>
+                <div class="container">
+                    <div class="row">
+                        <div class='alert alert-info' role='alert'>
+                            <p>Para saber como realizar a atualização de seus dados
+                                <a href="/atualizacaocadastral" th:href="@{/atualizacaocadastral}">clique aqui.</a></p>
+                            </br>
+                            <p>Ainda não recebeu o e-mail com o código de validação?
+                                <a href="/confirmarcodigoacesso" th:href="@{/confirmarcodigoacesso}">clique aqui.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+                <div class="container">
+                    <div class="row">
+                        <p>A Foz Advogados em nenhum momento guarda os dados de seus clientes em sites ou divulga as
+                            informações utilizadas nesta área do cliente.
+                            Os dados são utilizados apenas e exclusivamente para verificar e garantir que somente a
+                            pessoa
+                            detentora e responsável
+                            pela informação acesse-a, mantendo o sigilo das informações. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
-<footer th:insert="~{fragments/footer::footer-signin}">
+<footer th:insert="~{fragments/footer::footer-signout}">
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>

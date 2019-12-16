@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-@Service("entityService")
+@Service("domainEntityService")
 @ADomainEntity(nome = "DomainEntity", classe = DomainEntity.class)
 public class DomainEntityService extends AbstractService implements IService {
 
